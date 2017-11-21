@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\UIScripts\MainMenuScript.cs">
+    <Files>
+      <File FileName="Assets\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" Line="22" Column="101" />
+      <File FileName="Assets\Code\ControlCar.js" Line="413" Column="45" />
+      <File FileName="Assets\Code\UIScripts\MainMenuScript.cs" Line="97" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

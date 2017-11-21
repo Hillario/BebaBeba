@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DE07EDF-97D7-A71D-7627-48A761B05743}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_4_5_1;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_4_5_1;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="IFacebook">
+      <HintPath>Assets\Facebook\Scripts\IFacebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UnityVS.BebaBeba.CSharp.Plugins.csproj">
+      <Project>{565E3B1C-E22F-DB4E-45A8-7BF1924120CA}</Project>
+      <Name>UnityVS.BebaBeba.CSharp.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Code\CameraOrient.cs" />
+    <Compile Include="Assets\Code\GUIOrient.cs" />
+    <Compile Include="Assets\Code\UIScripts\MainMenuScript.cs" />
+    <Compile Include="Assets\Code\soundManagement.cs" />
+    <Compile Include="Assets\Examples\Scripts\InteractiveConsole.cs" />
+    <Compile Include="Assets\Facebook\Scripts\AndroidFacebook.cs" />
+    <Compile Include="Assets\Facebook\Scripts\AndroidFacebookLoader.cs" />
+    <Compile Include="Assets\Facebook\Scripts\CanvasFacebookLoader.cs" />
+    <Compile Include="Assets\Facebook\Scripts\EditorFacebook.cs" />
+    <Compile Include="Assets\Facebook\Scripts\EditorFacebookAccessToken.cs" />
+    <Compile Include="Assets\Facebook\Scripts\EditorFacebookLoader.cs" />
+    <Compile Include="Assets\Facebook\Scripts\FB.cs" />
+    <Compile Include="Assets\Facebook\Scripts\FBScreen.cs" />
+    <Compile Include="Assets\Facebook\Scripts\FBSettings.cs" />
+    <Compile Include="Assets\Facebook\Scripts\IOSFacebook.cs" />
+    <Compile Include="Assets\Facebook\Scripts\IOSFacebookLoader.cs" />
+    <Compile Include="Assets\Facebook\Scripts\NativeDialogModes.cs" />
+    <Compile Include="Assets\Road and Path Tool\AttachedPathScript.cs" />
+    <Compile Include="Assets\Road and Path Tool\PathScript.cs" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\facebook\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\facebook\bin\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\facebook\bin\proguard.txt" />
+    <None Include="Assets\Plugins\Android\facebook\bin\R.txt" />
+    <None Include="Assets\Plugins\Android\facebook\build.xml" />
+    <None Include="Assets\Plugins\Android\facebook\proguard-project.txt" />
+    <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_button_blue.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_button_check.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_loginbutton_silver.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_picker_item_background.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_picker_list_selector.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_picker_list_selector_background_transition.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_picker_top_button.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_top_background.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_top_button.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_usersettingsfragment_background_gradient.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_friendpickerfragment.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_login_activity_layout.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_activity_circle_row.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_checkbox.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_image.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_list_row.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_list_section_header.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_search_box.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_title_bar.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_title_bar_stub.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_placepickerfragment.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_placepickerfragment_list_row.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_search_bar_layout.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_usersettingsfragment.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values\attrs.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values\colors.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values\drawables.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values\strings.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values\styles.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values-es\strings.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values-hdpi\dimens.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values-he\strings.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values-iw\strings.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values-ldpi\dimens.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values-mdpi\dimens.xml" />
+    <None Include="Assets\Plugins\Android\facebook\res\values-xhdpi\dimens.xml" />
+    <None Include="Assets\Road and Path Tool\Shader\Diffuse_RoadOffset.shader" />
+    <None Include="Assets\Road and Path Tool\tutorial.txt" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+    <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+    <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+    <None Include="Assets\Facebook\Scripts\IFacebook.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
+</Project>

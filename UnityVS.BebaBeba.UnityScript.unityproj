@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6521106A-E890-E9CC-A689-1FFD015D7266}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>UnityVS.BebaBeba.UnityScript</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <ProjectTypeGuids>{84365F2C-1DDE-431A-8C14-179ADC971E4D};{1FAC5C55-277D-4884-94A4-83DBDAF57E56}</ProjectTypeGuids>
+    <MonoProfile>unity</MonoProfile>
+    <UnityPath>C:\Program Files (x86)\Unity\Editor</UnityPath>
+    <MonoPath>$(UnityPath)\Data\Mono</MonoPath>
+    <LibraryAssembly>Assembly-UnityScript.dll</LibraryAssembly>
+    <TargetFrameworkDirectory>$(MonoPath)\lib\mono\$(MonoProfile)</TargetFrameworkDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_4_5_1;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_4_5_1;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <HintPath>$(TargetFrameworkDirectory)\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>$(TargetFrameworkDirectory)\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML">
+      <HintPath>$(TargetFrameworkDirectory)\System.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>$(TargetFrameworkDirectory)\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(UnityPath)\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>$(UnityPath)\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UnityVS.BebaBeba.CSharp.Plugins.csproj">
+      <Project>{565E3B1C-E22F-DB4E-45A8-7BF1924120CA}</Project>
+      <Name>UnityVS.BebaBeba.CSharp.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityVS.BebaBeba.UnityScript.Plugins.unityproj">
+      <Project>{C8D0C56C-D7B8-C515-FD75-B6842E523A25}</Project>
+      <Name>UnityVS.BebaBeba.UnityScript.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Code\CameraCar.js" />
+    <Compile Include="Assets\Code\ControlCar.js" />
+    <Compile Include="Assets\Code\GPS.js" />
+    <Compile Include="Assets\Code\Kill.js" />
+    <Compile Include="Assets\Code\Loading.js" />
+    <Compile Include="Assets\Code\RotateCoins.js" />
+    <Compile Include="Assets\Code\RotateWatch.js" />
+    <Compile Include="Assets\Code\SkidSoundScript.js" />
+    <None Include="Assets\Road and Path Tool\Shader\Diffuse_RoadOffset.shader" />
+    <None Include="Assets\Road and Path Tool\tutorial.txt" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+    <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets" />
+    <Folder Include="Assets\Code" />
+    <Folder Include="Assets\Road and Path Tool" />
+    <Folder Include="Assets\Road and Path Tool\Shader" />
+    <Folder Include="Assets\Standard Assets" />
+    <Folder Include="Assets\Standard Assets\Particles" />
+    <Folder Include="Assets\Standard Assets\Particles\Sources" />
+    <Folder Include="Assets\Standard Assets\Particles\Sources\Shaders" />
+    <Folder Include="Assets\Standard Assets\Skyboxes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2012\UnityVS.UnityScript.targets" />
+</Project>
